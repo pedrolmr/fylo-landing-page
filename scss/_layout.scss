@@ -1,0 +1,62 @@
+//CSS that handles the layout, such as the container and any grid systems.
+body{
+    padding: 3.5rem 5rem 0 5rem;
+    border:1px solid orange;
+
+    .container{
+        border:1px solid black;
+
+        nav{
+            border:1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .logo{
+                display: flex;
+                border:1px solid black;
+            }
+
+            .nav-links{
+                border:1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 250px;
+                a{
+                    text-decoration: none;
+                    color:$desaturated-blue;
+                }
+            }
+        }
+    }
+
+    header{
+        border:2px solid indigo;
+        margin-top:4rem;
+        display: flex;
+        .left{
+            width: 50%;
+        }
+        .right{
+            width: 50%;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    section{
+        border:2px solid indigo;
+        margin-top:4rem;
+        display: flex;
+        .left{
+            width: 50%;
+        }
+        .right{
+            width: 50%;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

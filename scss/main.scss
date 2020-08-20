@@ -1,6 +1,5 @@
-.nav{
-    border:3px solid purple;
-    .features{
-        color: red
-    }
-}
+//import scss files
+
+@import 'base';
+@import 'components';
+@import 'layout';
