@@ -1,17 +1,18 @@
 //CSS that handles the layout, such as the container and any grid systems.
 body{
-    padding: 3.5rem 5rem 0 5rem;
+    // padding: 3.5rem 5rem 0 5rem;
     border:1px solid orange;
 
     .container{
         border:1px solid black;
+        // padding: 3.5rem 5rem 0 5rem;
 
         nav{
             border:1px solid red;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
+            padding: 3.5rem 5rem 0 5rem;
             .logo{
                 display: flex;
                 border:1px solid black;
@@ -31,9 +32,11 @@ body{
         }
     }
 
-    header{
-        border:2px solid indigo;
-        margin-top:4rem;
+    header, section{
+        // padding: 3.5rem 5rem 0 5rem;
+        padding: 5rem 5rem;
+        // border:2px solid indigo;
+        padding-top:5rem;
         display: flex;
         .left{
             display: flex;
@@ -89,21 +92,72 @@ body{
                 background-color: $bright-blue;
                 color: #fff;
                 border-radius:3px;
+                @include font($raleway, 700);
+                cursor: pointer;
             }
         }
     }
-    section{
-        border:2px solid indigo;
-        margin-top:4rem;
+    .section-1{
+        background-image: url('/images/bg-curve-desktop.svg');
+        background-position: center; /* Center the image */
+        // background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        // height:100%;
+
+        // width:100%;
+        // margin-top:5rem;
+        .content{
+            p{
+                margin:20px 0;
+            }
+            button{
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                padding: 5px 0;
+                width: 175px;
+                border: none;
+                background: none;
+                border-bottom: 1px solid $moderate-cyan;
+                color: $moderate-cyan;
+                margin: 20px 0;
+                @include font($raleway);
+                font-size: 1rem;
+                cursor: pointer;
+                img{
+                    align-self: flex-end;
+                }
+            }
+
+            .testimonial-card{
+                width:300px;
+                // border:1px solid black;
+                padding:2rem;
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.14);
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .section-2{
         display: flex;
-        .left{
-            width: 50%;
-        }
-        .right{
-            width: 50%;
-            img{
-                max-width: 100%;
-            }
-        }
+        background-color: $desaturated-blue;
     }
+
+    // section{
+    //     border:2px solid indigo;
+    //     margin-top:4rem;
+    //     display: flex;
+    //     .left{
+    //         width: 50%;
+    //     }
+    //     .right{
+    //         width: 50%;
+    //         img{
+    //             max-width: 100%;
+    //         }
+    //     }
+    // }
 }

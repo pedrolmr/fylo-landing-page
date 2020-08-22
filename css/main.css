@@ -56,7 +56,6 @@ table {
 }
 
 body {
-  padding: 3.5rem 5rem 0 5rem;
   border: 1px solid orange;
 }
 
@@ -76,6 +75,7 @@ body .container nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 3.5rem 5rem 0 5rem;
 }
 
 body .container nav .logo {
@@ -104,15 +104,15 @@ body .container nav .nav-links a {
   color: #585989;
 }
 
-body header {
-  border: 2px solid indigo;
-  margin-top: 4rem;
+body header, body section {
+  padding: 5rem 5rem;
+  padding-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .left {
+body header .left, body section .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,12 +129,12 @@ body header .left {
           align-items: center;
 }
 
-body header .left .content {
+body header .left .content, body section .left .content {
   border: 1px solid black;
   line-height: 1.5;
 }
 
-body header .left .content h3 {
+body header .left .content h3, body section .left .content h3 {
   color: #070439;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -142,7 +142,7 @@ body header .left .content h3 {
   margin-bottom: 20px;
 }
 
-body header .left .content p {
+body header .left .content p, body section .left .content p {
   color: #070439;
   font-family: "Raleway", sans-serif;
   font-weight: 0;
@@ -151,19 +151,19 @@ body header .left .content p {
   padding: 0 5rem 0 0;
 }
 
-body header .right {
+body header .right, body section .right {
   width: 50%;
 }
 
-body header .right img {
+body header .right img, body section .right img {
   max-width: 100%;
 }
 
-body header .cta-section {
+body header .cta-section, body section .cta-section {
   margin-top: 20px;
 }
 
-body header .cta-section input {
+body header .cta-section input, body section .cta-section input {
   border: 1px solid #585989;
   padding: 10px;
   -webkit-box-pack: justify;
@@ -174,48 +174,85 @@ body header .cta-section input {
   margin-right: 10px;
 }
 
-body header .cta-section input::-webkit-input-placeholder {
+body header .cta-section input::-webkit-input-placeholder, body section .cta-section input::-webkit-input-placeholder {
   color: #bfbfbf;
 }
 
-body header .cta-section input:-ms-input-placeholder {
+body header .cta-section input:-ms-input-placeholder, body section .cta-section input:-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-body header .cta-section input::-ms-input-placeholder {
+body header .cta-section input::-ms-input-placeholder, body section .cta-section input::-ms-input-placeholder {
   color: #bfbfbf;
 }
 
-body header .cta-section input::placeholder {
+body header .cta-section input::placeholder, body section .cta-section input::placeholder {
   color: #bfbfbf;
 }
 
-body header .cta-section button {
+body header .cta-section button, body section .cta-section button {
   border: none;
   padding: 12px;
   width: 30%;
   background-color: #3065f8;
   color: #fff;
   border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-body section {
-  border: 2px solid indigo;
-  margin-top: 4rem;
+body .section-1 {
+  background-image: url("/images/bg-curve-desktop.svg");
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+}
+
+body .section-1 .content p {
+  margin: 20px 0;
+}
+
+body .section-1 .content button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+  width: 175px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #3c9f8f;
+  color: #3c9f8f;
+  margin: 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 0;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-body section .left {
-  width: 50%;
+body .section-1 .content button img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-body section .right {
-  width: 50%;
+body .section-1 .content .testimonial-card {
+  width: 300px;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
 }
 
-body section .right img {
-  max-width: 100%;
+body .section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #585989;
 }
 /*# sourceMappingURL=main.css.map */
