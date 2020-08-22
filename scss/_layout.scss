@@ -36,12 +36,59 @@ body{
         margin-top:4rem;
         display: flex;
         .left{
+            display: flex;
+            flex-direction: column;
             width: 50%;
+            justify-content: center;
+            align-items: center;
+           .content{
+                border:1px solid black;
+                line-height: 1.5;
+                h3{
+                    color: $very-dark-blue;
+                    @include font($raleway, 700);
+                    font-size:2rem;
+                    margin-bottom:20px;
+
+                }
+                p{
+                    color: $very-dark-blue;
+                    @include font($raleway);
+                    font-size:1rem;
+                    color: $desaturated-blue;
+
+                    padding:0 5rem 0 0;
+                }
+           }
         }
         .right{
             width: 50%;
             img{
                 max-width: 100%;
+            }
+        }
+
+        .cta-section{
+            margin-top:20px;
+            input{
+                border: 1px solid $desaturated-blue;
+                padding:10px;
+                justify-content: space-between;
+                width: 50%;
+                border-radius:3px;
+                margin-right:10px;
+
+                &::placeholder{
+                    color:$light-gray;
+                }
+            }
+            button{
+                border:none;
+                padding:12px;
+                width: 30%;
+                background-color: $bright-blue;
+                color: #fff;
+                border-radius:3px;
             }
         }
     }

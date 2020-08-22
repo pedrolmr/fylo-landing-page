@@ -4,11 +4,34 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-//Font for Headings, Call-to-actions, Header Navigation:
+
+
+//#Colors
+
+//Primary:
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+
+//Accent:
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+
+//Neutral
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-//font-family: 'Raleway', sans-serif;
+
+$raleway: 'Raleway', sans-serif;
+$sansserif: 'Open Sans', sans-serif;
+
+@mixin font($font, $weight: 0){
+    font-family: $font;
+    font-weight: $weight;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -37,7 +60,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sansserif
 }
 ol, ul {
 	list-style: none;
@@ -54,18 +77,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-//#Colors
-
-//Primary:
-$very-dark-blue: hsl(243, 87%, 12%);
-$desaturated-blue: hsl(238, 22%, 44%);
-
-//Accent:
-$bright-blue: hsl(224, 93%, 58%);
-$moderate-cyan: hsl(170, 45%, 43%);
-
-//Neutral
-$light-grayish-blue: hsl(240, 75%, 98%);
-$light-gray: hsl(0, 0%, 75%);

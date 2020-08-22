@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ol, ul {
@@ -113,7 +113,42 @@ body header {
 }
 
 body header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .left .content {
+  border: 1px solid black;
+  line-height: 1.5;
+}
+
+body header .left .content h3 {
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+body header .left .content p {
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  font-weight: 0;
+  font-size: 1rem;
+  color: #585989;
+  padding: 0 5rem 0 0;
 }
 
 body header .right {
@@ -122,6 +157,46 @@ body header .right {
 
 body header .right img {
   max-width: 100%;
+}
+
+body header .cta-section {
+  margin-top: 20px;
+}
+
+body header .cta-section input {
+  border: 1px solid #585989;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+body header .cta-section input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+body header .cta-section input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+body header .cta-section input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+body header .cta-section input::placeholder {
+  color: #bfbfbf;
+}
+
+body header .cta-section button {
+  border: none;
+  padding: 12px;
+  width: 30%;
+  background-color: #3065f8;
+  color: #fff;
+  border-radius: 3px;
 }
 
 body section {
