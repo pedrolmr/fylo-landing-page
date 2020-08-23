@@ -75,7 +75,7 @@ body{
             margin-top:20px;
             input{
                 border: 1px solid $desaturated-blue;
-                padding:10px;
+                padding:15px;
                 justify-content: space-between;
                 width: 50%;
                 border-radius:3px;
@@ -87,13 +87,16 @@ body{
             }
             button{
                 border:none;
-                padding:12px;
+                padding:16px;
                 width: 30%;
                 background-color: $bright-blue;
                 color: #fff;
                 border-radius:3px;
                 @include font($raleway, 700);
                 cursor: pointer;
+                -webkit-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
+-moz-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
+box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
             }
         }
     }
@@ -144,20 +147,40 @@ body{
     .section-2{
         display: flex;
         background-color: $desaturated-blue;
-    }
+        .left{
+            width:60%;
+            .content{
+                h2{
+                    color: $light-grayish-blue;
+                    @include font($raleway, 700);
+                    font-size:2rem;
+                    margin-bottom:20px;
 
-    // section{
-    //     border:2px solid indigo;
-    //     margin-top:4rem;
-    //     display: flex;
-    //     .left{
-    //         width: 50%;
-    //     }
-    //     .right{
-    //         width: 50%;
-    //         img{
-    //             max-width: 100%;
-    //         }
-    //     }
-    // }
+                }
+                p{
+                    color: $light-grayish-blue;
+                    padding:0 35% 0 0;
+                }
+            }
+        }
+        .right{
+            border:1px solid pink;
+            width:40%;
+            .cta-section{
+                display: flex;
+                // border:4px solid black;
+                flex-direction: column;
+
+                input{
+                    box-sizing: border-box;
+                    width: 100%;
+                    margin-bottom:15px;
+                }
+                button{
+                    // border:4px solid black;
+                    width:40%;
+                }
+            }
+        }
+    }
 }

@@ -165,7 +165,7 @@ body header .cta-section, body section .cta-section {
 
 body header .cta-section input, body section .cta-section input {
   border: 1px solid #585989;
-  padding: 10px;
+  padding: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -192,7 +192,7 @@ body header .cta-section input::placeholder, body section .cta-section input::pl
 
 body header .cta-section button, body section .cta-section button {
   border: none;
-  padding: 12px;
+  padding: 16px;
   width: 30%;
   background-color: #3065f8;
   color: #fff;
@@ -200,6 +200,8 @@ body header .cta-section button, body section .cta-section button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   cursor: pointer;
+  -webkit-box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.23);
+  box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.23);
 }
 
 body .section-1 {
@@ -254,5 +256,48 @@ body .section-2 {
   display: -ms-flexbox;
   display: flex;
   background-color: #585989;
+}
+
+body .section-2 .left {
+  width: 60%;
+}
+
+body .section-2 .left .content h2 {
+  color: #f6f6fe;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+body .section-2 .left .content p {
+  color: #f6f6fe;
+  padding: 0 35% 0 0;
+}
+
+body .section-2 .right {
+  border: 1px solid pink;
+  width: 40%;
+}
+
+body .section-2 .right .cta-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .section-2 .right .cta-section input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+body .section-2 .right .cta-section button {
+  width: 40%;
 }
 /*# sourceMappingURL=main.css.map */
