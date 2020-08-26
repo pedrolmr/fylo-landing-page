@@ -1,1 +1,34 @@
 //anything reusable such as buttons, navbars, cards etc.
+@mixin button($border, ){
+
+}
+
+//FIRST BUTTON:
+
+// border:none;
+// padding:16px;
+// width: 30%;
+// background-color: $bright-blue;
+// color: #fff;
+// border-radius:3px;
+// @include font($raleway, 700);
+// cursor: pointer;
+// -webkit-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
+// -moz-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
+// box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
+
+//SECOND BUTTON:
+
+// display: flex;
+// align-items:center;
+// justify-content: space-between;
+// padding: 5px 0;
+// width: 175px;
+// border: none;
+// background: none;
+// border-bottom: 1px solid $moderate-cyan;
+// color: $moderate-cyan;
+// margin: 20px 0;
+// @include font($raleway);
+// font-size: 1rem;
+// cursor: pointer;
