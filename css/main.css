@@ -233,11 +233,48 @@ body .section-1 .content button img {
 }
 
 body .section-1 .content .testimonial-card {
-  width: 300px;
+  width: 20rem;
   padding: 2rem;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
+}
+
+body .section-1 .content .testimonial-card p {
+  padding: 0;
+}
+
+body .section-1 .content .testimonial-card .avatar-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .section-1 .content .testimonial-card .avatar-section img {
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+}
+
+body .section-1 .content .testimonial-card .avatar-section p {
+  display: block;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+
+body .section-1 .content .testimonial-card .avatar-section p:nth-child(1) {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+body .section-1 .content .testimonial-card .avatar-section p:nth-child(2) {
+  font-size: 0.7rem;
 }
 
 body .section-2 {
