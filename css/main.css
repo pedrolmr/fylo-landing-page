@@ -193,10 +193,9 @@ body header .cta-section button, body section .cta-section button {
 }
 
 body .section-1 {
-  background-image: url("/images/bg-curve-desktop.svg");
-  background-position: center;
-  /* Center the image */
-  background-size: cover;
+  background-color: #f6f6fe;
+  margin-top: 100px;
+  position: relative;
 }
 
 body .section-1 .content p {
@@ -234,7 +233,9 @@ body .section-1 .content button img {
 
 body .section-1 .content .testimonial-card {
   width: 20rem;
+  background-color: #fff;
   padding: 2rem;
+  margin-top: 3rem;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
@@ -275,6 +276,17 @@ body .section-1 .content .testimonial-card .avatar-section p:nth-child(1) {
 
 body .section-1 .content .testimonial-card .avatar-section p:nth-child(2) {
   font-size: 0.7rem;
+}
+
+body .section-1::before {
+  content: '';
+  background-image: url("/images/bg-curve-desktop.svg");
+  background-size: cover;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  height: 80px;
+  width: 100%;
 }
 
 body .section-2 {
