@@ -182,12 +182,12 @@ body header .cta-section button, body section .cta-section button {
   border: none;
   padding: 16px;
   width: 30%;
-  background-color: #3065f8;
+  background: #3065f8;
   color: #fff;
-  border-radius: 3px;
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  cursor: pointer;
+  border-radius: 3px;
   -webkit-box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.23);
   box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.23);
 }
@@ -213,15 +213,16 @@ body .section-1 .content button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: none;
   padding: 5px 0;
   width: 175px;
-  border: none;
   background: none;
-  border-bottom: 1px solid #3c9f8f;
   color: #3c9f8f;
-  margin: 20px 0;
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-weight: 0;
+  border-bottom: 1px solid #3c9f8f;
+  margin: 20px 0;
   font-size: 1rem;
   cursor: pointer;
 }
