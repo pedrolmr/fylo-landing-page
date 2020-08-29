@@ -1,25 +1,15 @@
 //CSS that handles the layout, such as the container and any grid systems.
 body{
-    // padding: 3.5rem 5rem 0 5rem;
-    // border:1px solid orange;
-
     .container{
-        // border:1px solid black;
-        // padding: 3.5rem 5rem 0 5rem;
-
         nav{
-            // border:1px solid red;
-            display: flex;
-            flex-direction: row;
+            @include display(flex);
             justify-content: space-between;
             padding: 3.5rem 5rem 0 5rem;
             .logo{
                 display: flex;
-                // border:1px solid black;
             }
 
             .nav-links{
-                // border:1px solid black;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -33,19 +23,15 @@ body{
     }
 
     header, section{
-        // padding: 3.5rem 5rem 0 5rem;
         padding: 5rem 5rem;
-        // border:2px solid indigo;
         padding-top:5rem;
-        display: flex;
+        @include display(flex);
         .left{
-            display: flex;
-            flex-direction: column;
+            @include display(flex, column);
             width: 50%;
             justify-content: center;
             align-items: center;
            .content{
-                // border:1px solid black;
                 line-height: 1.5;
                 h3{
                     color: $very-dark-blue;
@@ -96,13 +82,6 @@ body{
         }
     }
     .section-1{
-        // background-image: url('/images/bg-curve-desktop.svg');
-        // background-position: center; /* Center the image */
-        // background-repeat: no-repeat; /* Do not repeat the image */
-        // background-size: cover;
-        // height:100%;
-        // width:100%;
-        // margin-top:5rem;
         background-color: $light-grayish-blue;
         margin-top: 100px;
         position: relative;
@@ -112,7 +91,7 @@ body{
                 margin:20px 0;
             }
             button{
-                display: flex;
+                @include display(flex);
                 align-items:center;
                 justify-content: space-between;
                 @include button(none, 5px 0, 175px, none, $moderate-cyan);
@@ -128,7 +107,6 @@ body{
 
             .testimonial-card{
                 width:20rem;
-                // border:1px solid black;
                 background-color:#fff;
                 padding:2rem;
                 margin-top:3rem;
@@ -141,7 +119,6 @@ body{
                 }
 
                 .avatar-section{
-                    // border:1px solid black;
                     display: flex;
                     padding:0;
                     align-content: center;
@@ -153,7 +130,6 @@ body{
                         height: 10%;
                     }
                     p{
-                        // border:1px solid darkorchid;
                         display: block;
                         padding:0 0 0 10px;
                         margin:0;
@@ -181,7 +157,7 @@ body{
     }
 
     .section-2{
-        display: flex;
+        @include display(flex);
         background-color: $desaturated-blue;
         .left{
             width:60%;
@@ -200,12 +176,9 @@ body{
             }
         }
         .right{
-            // border:1px solid pink;
             width:40%;
             .cta-section{
-                display: flex;
-                // border:4px solid black;
-                flex-direction: column;
+                @include display(flex, column);
 
                 input{
                     box-sizing: border-box;
@@ -213,16 +186,15 @@ body{
                     margin-bottom:15px;
                 }
                 button{
-                    // border:4px solid black;
                     width:40%;
                 }
             }
         }
     }
     footer{
-        // border:10px solid palegreen;
         padding:5%;
-        display: flex;
+        // display: flex;
+        @include display(flex);
         background-color: $very-dark-blue;
         height:200px;
         justify-content: space-between;
@@ -231,18 +203,14 @@ body{
                 padding:0 10px 0 0;
             }
             span{
-                // margin:20px 0;
                 display: flex;
-                // border:1px solid white;
-                // justify-content: center;
                 align-items: center;
                 padding:15px 0;
             }
         }
         .column-1, .column-2, .column-3{
-            display: flex;
+            @include display(flex, column);
             color: #fff;
-            flex-direction: column;
         }
 
         .column-2, .column-3 {
@@ -252,28 +220,15 @@ body{
                 padding:15px 0;
             }
         }
-
-        // .column-2, .column-3, .column-4{
-        //     padding:4%;
-        // }
-
         .column-4{
-            display: flex;
+            @include display(flex);
             color:white;
-            // font-size:2rem;
-            // border:1px solid white;
-            // width:200px;
-            flex-direction: row;
             height:30px;
             width:9.5%;
-            // padding: 0 20px;
-    
             .fb-icon, .tw-icon, .ig-icon{
-                display: flex;
-                flex-direction: row;
+                @include display(flex);
                 border-radius: 50%;
                 border:1px solid #fff;
-                // padding:5px;
                 justify-content: center;
                 align-items: center;
                 width:100%;

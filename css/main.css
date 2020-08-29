@@ -99,6 +99,10 @@ body header, body section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 body header .left, body section .left {
@@ -206,6 +210,10 @@ body .section-1 .content button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -293,6 +301,10 @@ body .section-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #585989;
 }
 
@@ -343,6 +355,10 @@ body footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #070439;
   height: 200px;
   -webkit-box-pack: justify;
@@ -368,11 +384,11 @@ body footer .column-1, body footer .column-2, body footer .column-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #fff;
 }
 
 body footer .column-2 a, body footer .column-3 a {
@@ -385,11 +401,11 @@ body footer .column-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  color: white;
   height: 30px;
   width: 9.5%;
 }
