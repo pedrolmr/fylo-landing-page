@@ -1,12 +1,32 @@
 //CSS that handles the layout, such as the container and any grid systems.
 body{
     .container{
+        @media only screen and (max-width:375px) {
+            width:100%;
+          }
         nav{
             @include display(flex);
             justify-content: space-between;
             padding: 3.5rem 5rem 0 5rem;
+            @media only screen and (max-width:375px){
+            //   border:3px solid black;
+              padding:1.5rem 1rem 0 1rem;
+            //   align-content: space-between;
+            //   padding-left:20px;
+            //   padding-right:20px;
+               
+            }
             .logo{
                 display: flex;
+                padding:0;
+                margin:0;
+                img{
+                    @media only screen and (max-width:375px) {
+                        // width:50%;
+                        // height:50%;
+                        width:100px;
+                    }
+                }
             }
 
             .nav-links{
@@ -14,9 +34,18 @@ body{
                 align-items: center;
                 justify-content: space-between;
                 width: 250px;
+                @media only screen and (max-width:375px) {
+                    // border:3px solid black;
+                    justify-content: flex-end;
+                    
+                 }
                 a{
                     text-decoration: none;
                     color:$desaturated-blue;
+                    @media only screen and (max-width:375px) {
+                        // border:3px solid black;
+                        padding:0.5rem;
+                     }
                 }
             }
         }
@@ -26,11 +55,24 @@ body{
         padding: 5rem 5rem;
         padding-top:5rem;
         @include display(flex);
+        @media only screen and (max-width:375px){
+            @include display(flex, column);
+            flex-direction: column-reverse;
+            padding:0 1rem;
+            // margin-top:30px;
+            margin:0;
+         }
         .left{
             @include display(flex, column);
             width: 50%;
             justify-content: center;
             align-items: center;
+            @media only screen and (max-width:375px) {
+                // border:3px solid black;
+                width:100%;
+                text-align:center;
+                margin-top:30px;
+             }
            .content{
                 line-height: 1.5;
                 h3{
@@ -38,27 +80,51 @@ body{
                     @include font($raleway, 700);
                     font-size:2rem;
                     margin-bottom:20px;
-
+                    @media only screen and (max-width:375px) {
+                        // border:3px solid black;
+                        font-size:1.6rem;
+                     }
                 }
                 p{
                     color: $very-dark-blue;
                     @include font($raleway);
                     font-size:1rem;
                     color: $desaturated-blue;
-
                     padding:0 5rem 0 0;
+                    @media only screen and (max-width:375px) {
+                        // border:3px solid orange;
+                        padding:0;
+                        text-align:center;
+                     }
                 }
            }
         }
         .right{
             width: 50%;
+            @media only screen and (max-width:375px){
+                width:100%;
+                padding:0;
+                margin-top:30px;
+                
+             }
             img{
                 max-width: 100%;
+                @media only screen and (max-width:375px) {
+                    // border:3px solid black;
+                    width:100%;
+                    padding:0;
+                 }
             }
         }
 
         .cta-section{
             margin-top:20px;
+            @media only screen and (max-width:375px) {
+                // border:3px solid purple;
+                width:100%;
+                padding:0;
+                @include display(flex, column);
+             }
             input{
                 border: 1px solid $desaturated-blue;
                 padding:15px;
@@ -66,10 +132,15 @@ body{
                 width: 50%;
                 border-radius:3px;
                 margin-right:10px;
-
                 &::placeholder{
                     color:$light-gray;
                 }
+
+                @media only screen and (max-width:375px) {
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin:0;
+                 }
             }
             button{
                 @include button(none, 16px, 30%, $bright-blue, #fff);
@@ -78,6 +149,10 @@ body{
                 -webkit-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
                 -moz-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
                 box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.23);
+                @media only screen and (max-width:375px) {
+                    width: 100%;
+                    margin-top:20px;
+                 }
             }
         }
     }
@@ -86,7 +161,6 @@ body{
         margin-top: 100px;
         position: relative;
         .content{
-
             p{
                 margin:20px 0;
             }
@@ -154,6 +228,15 @@ body{
         left:0;
         height: 80px;
         width: 100%;
+        @media only screen and (max-width:375px) {
+            background-image: url('/images/bg-curve-mobile.svg');
+            background-size:cover;
+            position: absolute;
+            top:-50px;
+            left:0;
+            height: 50px;
+            // width: 100%;
+        }
     }
 
     .section-2{
