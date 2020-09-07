@@ -38,7 +38,11 @@ $sansserif: 'Open Sans', sans-serif;
 	flex-direction: $direction;
 }
 
-$small: 375px;
+@mixin small{
+	@media only screen and (max-width:375px) {
+		@content;
+	}
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -84,6 +88,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-//
-//
-///
